@@ -149,7 +149,7 @@ p {
 #Projects {
   background-color: #3B474B;
   color: #E9EFF4;
-  height: 576px;
+  height: 600px;
   padding: 50px 20px 50px 20px;
 }
 
@@ -157,7 +157,7 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  padding: 50px 0 50px 0;
+  padding: 75px 0 75px 0;
 }
 
 #Project1 {
