@@ -67,22 +67,12 @@
 }
 
 #skills-icons{
-  margin-right: 10px;
-  padding-top: 40px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  height: 50px;
-  width: auto;
+  justify-content: center;
+  padding-top: 40px;
+  gap: 15px;
 }
 
-#React{
-margin-right: -10px;
-}
-
-#Java{
-padding-left: 20px;
-}
 
 #Projects{
   background-color: $secondary-colors;
