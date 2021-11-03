@@ -1,0 +1,18 @@
+@import "_variables";
+
+
+.navbar{
+  background-color: $primary-colors;
+  height: 70px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  border-bottom: 1px solid $secondary-colors;
+
+  > .nav__header {
+    color: $secondary-colors;
+    font-size: 3rem;
+  }
+}
