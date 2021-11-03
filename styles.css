@@ -155,7 +155,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  height: 20%;
+  height: 20px;
   width: auto;
 }
 
