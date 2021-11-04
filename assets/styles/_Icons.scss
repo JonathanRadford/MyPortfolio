@@ -1,0 +1,51 @@
+@import "_variables";
+
+#skills-icons{
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  gap: 30px;
+}
+.fab{
+  font-size: 2em;
+}
+.fa-react{
+  color: #61DBFB;
+}
+
+.fa-css3-alt{
+ color: #264de4;
+}
+
+.fa-js{
+  background-color: black;
+  color: #f0db4f;
+}
+
+.fa-java{
+  color: #5382a1;
+}
+
+.fa-html5{
+  color: #f06529;
+}
+
+.Footer__Icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;  
+}  
+
+.Footer__GitHub{
+  color: #171515;
+  padding: 0 10px 0 10px;
+}
+.Footer__Linkedin{
+  color: #0072b1;
+  padding: 0 10px 0 10px;
+} 
+
+.fab:hover{
+  color: $secondary-colors;
+}

@@ -2,15 +2,11 @@
 @import "assets/styles/_nav.scss";
 @import "assets/styles/_typography.scss";
 @import "assets/styles/_variables.scss";
+@import "assets/styles/Icons";
 
 .intro-page{
   text-align: center;
   color: $secondary-colors;
-}
-
-#logo{
-  padding-left: 20px;
-  height: 70px;
 }
 
 #Wales {
@@ -33,14 +29,14 @@
   background-color: $secondary-colors;
   color: $tertiary-colors;
   height: 288px;
-  padding: 50px 30px 50px 30px;
+  padding: 80px 25px 50px 25px;
 }
 
 #skills{
   background-color: $primary-colors;
   color: $secondary-colors;
   height: 285px;
-  padding-top: 50px;
+  padding-top: 80px;
   padding-bottom: 50px;
 }
 
@@ -67,126 +63,88 @@
   grid-row: 6/9;
 }
 
-#skills-icons{
-  display: flex;
-  justify-content: center;
-  padding-top: 40px;
-  gap: 30px;
-}
-
-.fa-react{
-  color: #61DBFB;
-  font-size: 2em;
-}
-
-.fa-css3-alt{
- color: #264de4;
- font-size: 2em;
-}
-
-.fa-js{
-  background-color: black;
-  color: #f0db4f;
-  font-size: 2em;
-}
-
-.fa-java{
-  color: #5382a1;
-  font-size: 2em;
-}
-
-.fa-html5{
-  color: #f06529;
-  font-size: 2em;
-}
-
-.fab:hover{
-  color: $secondary-colors;
-}
-
 #Projects{
   background-color: $secondary-colors;
   color: $tertiary-colors;
   height: 620px;
-  padding: 50px 20px 50px 20px;
+  padding: 80px 20px 80px 20px;
 }
 
 #ProjectImages{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  padding: 75px 0 0 20px;
-}
-
-#Project1 {
-  grid-column: 1/2;
-  grid-row: 1/3;
-  border-radius: 10px;
-}
-
-#Project2 {
-  grid-column: 7/8;
-  grid-row: 1/3;
-  border-radius: 10px;
-}
-#Project3 {
-  grid-column: 1/2;
-  grid-row: 5/7;
-  border-radius: 10px;
-}
-#Project4 {
-  grid-column: 7/9;
-  grid-row: 5/7;
-  border-radius: 10px;
-}
-#Project5 {
-  grid-column: 1/2;
-  grid-row: 9/11;
-  border-radius: 10px;
-}
-#Project6 {
-  grid-column: 7/9;
-  grid-row: 9/11;
-  border-radius: 10px;
-}
-
-#ProjectInfo1 {
-  padding-top: 10px;
-  grid-column: 2/6;
-  grid-row: 1/3;
-}
-
-#ProjectInfo2 {
-  padding-top: 10px;
-  grid-column: 8/12;
-  grid-row: 1/3;
-}
-#ProjectInfo3 {
-  padding-top: 10x;
-  grid-column: 2/6;
-  grid-row: 5/7;
-}
-#ProjectInfo4 {
-  padding-top: 10px;
-  grid-column: 8/12;
-  grid-row: 5/7;
-}
-#ProjectInfo5 {
-  padding-top: 10px;
-  grid-column: 2/6;
-  grid-row: 9/11;
-}
-#ProjectInfo6 {
-  padding-top: 10px;
-  grid-column: 8/12;
-  grid-row: 9/11;
+  padding: 75px 0 0 30px;
+  #Project1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    border-radius: 10px;
+  }
+  
+  #Project2 {
+    grid-column: 7/8;
+    grid-row: 1/3;
+    border-radius: 10px;
+  }
+  #Project3 {
+    grid-column: 1/2;
+    grid-row: 5/7;
+    border-radius: 10px;
+  }
+  #Project4 {
+    grid-column: 7/9;
+    grid-row: 5/7;
+    border-radius: 10px;
+  }
+  #Project5 {
+    grid-column: 1/2;
+    grid-row: 9/11;
+    border-radius: 10px;
+  }
+  #Project6 {
+    grid-column: 7/9;
+    grid-row: 9/11;
+    border-radius: 10px;
+  }
+  
+  #ProjectInfo1 {
+    padding-top: 10px;
+    grid-column: 2/6;
+    grid-row: 1/3;
+  }
+  
+  #ProjectInfo2 {
+    padding-top: 10px;
+    grid-column: 8/12;
+    grid-row: 1/3;
+  }
+  #ProjectInfo3 {
+    padding-top: 10x;
+    grid-column: 2/6;
+    grid-row: 5/7;
+  }
+  #ProjectInfo4 {
+    padding-top: 10px;
+    grid-column: 8/12;
+    grid-row: 5/7;
+  }
+  #ProjectInfo5 {
+    padding-top: 10px;
+    grid-column: 2/6;
+    grid-row: 9/11;
+  }
+  #ProjectInfo6 {
+    padding-top: 10px;
+    grid-column: 8/12;
+    grid-row: 9/11;
+  }
 }
 
 #Footer{
   background-color: $primary-colors;
   color: $secondary-colors;
-  height: 600px;
-  padding: 50px 30px 50px 30px;
+  height: auto;
+  padding: 80px 30px 50px 30px;
 }
 
 input[type=text], select, textarea {
@@ -197,9 +155,83 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 550px) {
+  
  input {
     width: 100%;
     margin-top: 0;
+  }
+  input[type=text], select, textarea {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #Jonny{
+    margin-top: 200px;
+    height: 220px;
+    width: auto;
+  }
+
+  .Curly-Left {
+    padding-left: 50px;
+   }
+   .Curly-Right {
+     padding-right: 50px;
+   }
+
+  input[type=text], select, textarea {
+    margin-left: 20px;
+  }
+}
+ 
+ @media screen and (min-width: 1024px) {
+  #Jonny{
+    margin-top: 200px;
+    height: 250px;
+    width: auto;
+  }
+  #Wales {
+    padding-bottom: 200px;
+  }
+  
+#About-Me{
+  padding: 100px 25px 100px 25px;
+}
+#skills{
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+.Curly-Left {
+ padding-left: 100px;
+}
+.Curly-Right {
+  padding-right: 100px;
+}
+#Projects{
+  padding: 100px 0 140px;
+}
+#ProjectImages{
+  padding: 100px 0 0 100px;
+}
+
+#Footer{
+  padding-top: 100px;
+}
+input[type=text], select, textarea {
+  width: 60%;
+  margin-left: 180px;
+}
+ }
+@media screen and (min-width: 1440px){
+  #Wales {
+    padding-bottom: 260px;
+  }
+  #Projects{
+    padding: 100px 0 210px;
+  }
+  input[type=text], select, textarea {
+    width: 50%;
+    margin-left: 340px;
   }
 }

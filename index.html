@@ -10,7 +10,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Open+Sans:wght@600;700;800&family=Ubuntu:wght@500&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="styles.css">
   <title>Jonathan Radford</title>
 </head>
@@ -18,13 +19,26 @@
 <body>
   <header>
     <nav class="navbar">
-      <img id="logo" src="images\JonathanR.png" alt="Jonathan Radford Logo">
+      <a class="Navbar__Links" href="#About-Me">
+        <h2>About</h2>
+      </a>
+      <a class="Navbar__Links" href="#skills">
+        <h2 class="Navbar__Links"> Skills</h2>
+      </a>
+      <img id="logo" src="images\logo.png" alt="Jonathan Radford">
+      <a class="Navbar__Links" href="#Projects">
+        <h2 class="Navbar__Links">Projects</h2>
+      </a>
+      <a class="Navbar__Links" href="#Footer">
+        <h2 class="Navbar__Links">Contact</h2>
+      </a>
     </nav>
   </header>
   <main>
     <div id="Wales" alt="Welsh Mountains">
       <div class="intro-page">
         <img id="Jonny" src="images\Jonny.png" alt="Jonathan Headshot">
+
         <h1>My name is Jonathan, <br> and I’m a Software Developer.</h1>
       </div>
     </div>
@@ -48,7 +62,7 @@
       <div id="skills-icons">
         <i class="fab fa-react fa-3x"></i>
         <i class="fab fa-css3-alt fa-3x"></i>
-        <i class="fab fa-js fa-3x" ></i>
+        <i class="fab fa-js fa-3x"></i>
         <i class="fab fa-java fa-3x"></i>
         <i class="fab fa-html5 fa-3x"></i>
       </div>
@@ -56,7 +70,7 @@
     <section id="Projects">
       <h2>Projects.</h2><br>
       <div id="ProjectImages">
-        <img id="Project1" src="images\Project1.png" alt="">
+        <img id="Project1" class="" src="images\Project1.png" alt="">
         <img id="Project2" src="images\Project2.png" alt="">
         <img id="Project3" src="images\Project3.png" alt="">
         <img id="Project4" src="images\Project4.png" alt="">
@@ -73,23 +87,28 @@
   </main>
   <footer id="Footer">
     <h2>Contacts.</h2><br>
-    <p>If you would like to contact me directly, please leave a message and I’ll get back to you as soon as possible. </p><br>
-      <div class="Footer__Contact">
-        <form action="" method="get" onsubmit="return submitMessage(event);">
-          <p class="">Email:</p>
-          <label class="Footer__Email" for="email"></label>
-          <input type="text" name="email" id="email" required>
-          <p class="Footer__P2">Full Name:</p>
-          <label class="Footer__FName" for="fullName"></label>
-          <input type="text" name="fullName" id="fullName" required>
-          <p class="Footer__P3">Comment:</p>
-          <label class="Footer__Comment" for="comment"></label>
-          <textarea name="comment" id="comment" cols="20" rows="3" onfocus="this.value=''" required></textarea>
-        </div>
-        <div id="Footer__Btn">
-          <input class="btn-primary btn-clear"type="reset" value="Clear">
-          <input class="btn-primary btn-submit"type="submit">
-        </div>
+    <p>If you would like to contact me directly, please leave a message and I’ll get back to you as soon as possible.
+    </p><br>
+    <div class="Footer__Contact">
+      <form action="" method="get" onsubmit="return submitMessage(event);">
+        <p class="">Email:</p>
+        <label class="Footer__Email" for="email"></label>
+        <input type="text" name="email" id="email" required>
+        <p class="Footer__P2">Full Name:</p>
+        <label class="Footer__FName" for="fullName"></label>
+        <input type="text" name="fullName" id="fullName" required>
+        <p class="Footer__P3">Comment:</p>
+        <label class="Footer__Comment" for="comment"></label>
+        <textarea name="comment" id="comment" cols="20" rows="6" onfocus="this.value=''" required></textarea>
+    </div>
+    <div id="Footer__Btn">
+      <input class="btn-primary btn-clear" type="reset" value="Clear">
+      <input class="btn-primary btn-submit" type="submit">
+    </div>
+    <div class="Footer__Icons">
+      <a href="https://github.com/JonathanRadford" target="_blank"><i class="fab fa-github Footer__GitHub"></i></a>
+      <a href="https://github.com/JonathanRadford" target="_blank"><i class="fab fa-linkedin Footer__Linkedin"></i></a>
+    </div>
   </footer>
   <script src="index.js"></script>
 </body>
