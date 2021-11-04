@@ -43,20 +43,16 @@
 .navbar {
   background-color: #DAEAF0;
   height: 70px;
-  position: fixed;
   width: 100%;
+  position: fixed;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid #3B474B;
 }
-.navbar > .nav__header {
-  color: #3B474B;
-  font-size: 3rem;
-}
 
-#logo {
+#Navbar__Logo {
   height: 70px;
 }
 
@@ -66,47 +62,17 @@
   }
 }
 @media screen and (min-width: 550px) {
-  .navbar {
-    background-color: #DAEAF0;
-    height: 70px;
-    position: fixed;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    color: #3B474B;
-  }
-  .navbar > .nav__header {
-    color: #3B474B;
-    font-size: 3rem;
-  }
-
-  #logo {
-    height: 70px;
+  #Navbar__Logo {
     padding-left: 50px;
   }
 }
 @media screen and (min-width: 1024px) {
   .navbar {
-    background-color: #DAEAF0;
     height: 100px;
-    position: fixed;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    color: #3B474B;
-  }
-  .navbar > .nav__header {
-    color: #3B474B;
-    font-size: 3rem;
   }
 
-  #logo {
+  #Navbar__Logo {
     height: 99px;
-    padding-left: 50px;
   }
 }
 * {
@@ -146,13 +112,11 @@ a {
 @media screen and (min-width: 550px) {
   h1 {
     font-size: 40px;
-    font-weight: 800;
     line-height: 2rem;
   }
 
   h2 {
     font-size: 20px;
-    text-decoration: none;
   }
 
   p {
@@ -166,13 +130,11 @@ a {
 
   h1 {
     font-size: 35px;
-    font-weight: 800;
     line-height: 2rem;
   }
 
   h2 {
     font-size: 23px;
-    text-decoration: none;
   }
 
   p {
@@ -186,13 +148,10 @@ a {
 
   h1 {
     font-size: 45px;
-    font-weight: 800;
-    line-height: 2rem;
   }
 
   h2 {
     font-size: 25px;
-    text-decoration: none;
   }
 
   p {
@@ -208,22 +167,18 @@ a {
 
   h1 {
     font-size: 50px;
-    font-weight: 800;
-    line-height: 2rem;
   }
 
   h2 {
     font-size: 30px;
-    text-decoration: none;
   }
 
   p {
     font-size: 26px;
-    margin: 0 50px 0;
     padding: 20px 0 30px 0;
   }
 }
-#skills-icons {
+#skills__icons {
   display: flex;
   justify-content: center;
   padding-top: 40px;
@@ -259,7 +214,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 10%;
 }
 
 .Footer__GitHub {
@@ -276,22 +230,22 @@ a {
   color: #3B474B;
 }
 
-.intro-page {
+.Landing-page {
   text-align: center;
   color: #3B474B;
 }
 
-#Wales {
+#Background-Image {
   background-image: url(Wales.jpg);
   background-repeat: no-repeat;
   background-size: auto;
-  height: 665px;
+  height: 710px;
   top: 20px;
   z-index: -5;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
 }
 
-#Jonny {
+#Landing__Profile {
   margin-top: 200px;
   height: 134px;
   width: auto;
@@ -308,8 +262,7 @@ a {
   background-color: #DAEAF0;
   color: #3B474B;
   height: 285px;
-  padding-top: 80px;
-  padding-bottom: 50px;
+  padding: 80px 25px 50px 25px;
 }
 
 #skillsInfo {
@@ -343,69 +296,77 @@ a {
   padding: 80px 20px 80px 20px;
 }
 
-#ProjectImages {
+#Project__Information {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   padding: 75px 0 0 30px;
 }
-#ProjectImages #Project1 {
-  grid-column: 1/2;
-  grid-row: 1/3;
+
+.Project__Images {
   border-radius: 10px;
 }
-#ProjectImages #Project2 {
+
+.Project__Text {
+  padding-top: 10px;
+}
+
+#Project-Image1 {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+#Project-Image2 {
   grid-column: 7/8;
   grid-row: 1/3;
-  border-radius: 10px;
 }
-#ProjectImages #Project3 {
+
+#Project-Image3 {
   grid-column: 1/2;
   grid-row: 5/7;
-  border-radius: 10px;
 }
-#ProjectImages #Project4 {
+
+#Project-Image4 {
   grid-column: 7/9;
   grid-row: 5/7;
-  border-radius: 10px;
 }
-#ProjectImages #Project5 {
+
+#Project-Image5 {
   grid-column: 1/2;
   grid-row: 9/11;
-  border-radius: 10px;
 }
-#ProjectImages #Project6 {
+
+#Project-Image6 {
   grid-column: 7/9;
   grid-row: 9/11;
-  border-radius: 10px;
 }
-#ProjectImages #ProjectInfo1 {
-  padding-top: 10px;
+
+#Project-Text1 {
   grid-column: 2/6;
   grid-row: 1/3;
 }
-#ProjectImages #ProjectInfo2 {
-  padding-top: 10px;
+
+#Project-Text2 {
   grid-column: 8/12;
   grid-row: 1/3;
 }
-#ProjectImages #ProjectInfo3 {
-  padding-top: 10x;
+
+#Project-Text3 {
   grid-column: 2/6;
   grid-row: 5/7;
 }
-#ProjectImages #ProjectInfo4 {
-  padding-top: 10px;
+
+#Project-Text4 {
   grid-column: 8/12;
   grid-row: 5/7;
 }
-#ProjectImages #ProjectInfo5 {
-  padding-top: 10px;
+
+#Project-Text5 {
   grid-column: 2/6;
   grid-row: 9/11;
 }
-#ProjectImages #ProjectInfo6 {
-  padding-top: 10px;
+
+#Project-Text6 {
   grid-column: 8/12;
   grid-row: 9/11;
 }
@@ -436,7 +397,7 @@ input[type=text], select, textarea {
   }
 }
 @media screen and (min-width: 768px) {
-  #Jonny {
+  #Landing__Profile {
     margin-top: 200px;
     height: 220px;
     width: auto;
@@ -450,18 +411,27 @@ input[type=text], select, textarea {
     padding-right: 50px;
   }
 
+  #Projects {
+    height: 900px;
+  }
+
+  .Project__Images {
+    border-radius: 10px;
+    height: 125px;
+  }
+
   input[type=text], select, textarea {
     margin-left: 20px;
   }
 }
 @media screen and (min-width: 1024px) {
-  #Jonny {
+  #Landing__Profile {
     margin-top: 200px;
     height: 250px;
     width: auto;
   }
 
-  #Wales {
+  #Background-Image {
     padding-bottom: 200px;
   }
 
@@ -486,7 +456,7 @@ input[type=text], select, textarea {
     padding: 100px 0 140px;
   }
 
-  #ProjectImages {
+  #Project__Information {
     padding: 100px 0 0 100px;
   }
 
@@ -500,16 +470,13 @@ input[type=text], select, textarea {
   }
 }
 @media screen and (min-width: 1440px) {
-  #Wales {
+  #Background-Image {
     padding-bottom: 260px;
-  }
-
-  #Projects {
-    padding: 100px 0 210px;
+    height: 800px;
   }
 
   input[type=text], select, textarea {
-    width: 50%;
-    margin-left: 340px;
+    width: 45%;
+    margin-left: 500px;
   }
 }
