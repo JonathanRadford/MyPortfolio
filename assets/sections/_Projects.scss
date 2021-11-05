@@ -81,13 +81,19 @@
       height: 125px;
     }
     .Project__Text{
-      padding: 25px 25px 0 25px;
+      padding: 20px 25px 0 25px;
     }
 }
    
 @media screen and (min-width: 1024px) {
 #Project__Information{
-  padding: 95px 0 0 0;
+  padding: 20px 0 0 0;
+}
+.Project__Images{
+  height: 115px;
+}
+.Project__Text{
+  padding: 10px 0px 0 5px;
 }
 .Project__Images{
   margin-left: 50px;

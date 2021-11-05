@@ -42,15 +42,21 @@ input[type=text], select, textarea {
 
 @media screen and (min-width: 1440px){
   input[type=text], select, textarea {
-    width: 45%;
-    margin-left: 370px;
+    width: 35%;
+    margin-left: 430px;
+  }
+  #Footer>p{
+    margin-bottom: 5px;
+  }
+.Footer__Text{
+    font-size: 1rem;
+    padding-top: 5px;
   }
 }
 
 @media screen and (min-width: 1920px){
   input[type=text], select, textarea {
-    width: 40%;
-    margin-left: 530px;
+    margin-left: 570px;
   }
 }
 
