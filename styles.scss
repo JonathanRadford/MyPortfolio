@@ -57,7 +57,7 @@
   width: 40px;
 }
 
-.skillsPara{
+.skillsParagraph{
   grid-column: 8;
   grid-row: 6/9;
 }
@@ -177,6 +177,7 @@ input[type=text], select, textarea {
 
   #Projects{
     height: 900px;
+    padding-top: 100px;
   }
    .Project__Images{
     border-radius: 10px;
@@ -212,11 +213,11 @@ input[type=text], select, textarea {
 .Curly-Right {
   padding-right: 100px;
 }
-#Projects{
-  padding: 100px 0 140px;
+.Project__Images{
+  margin-left: 50px;
 }
 #Project__Information{
-  padding: 100px 0 0 100px;
+  padding: 100px 0 0 0;
 }
 #Footer{
   padding-top: 100px;
@@ -233,6 +234,12 @@ input[type=text], select, textarea {
   }
   input[type=text], select, textarea {
     width: 45%;
-    margin-left: 500px;
+    margin-left: 370px;
+  }
+}
+@media screen and (min-width: 1920px){
+  input[type=text], select, textarea {
+    width: 40%;
+    margin-left: 530px;
   }
 }
