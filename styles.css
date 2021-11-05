@@ -518,7 +518,7 @@ input[type=text], select, textarea {
   background-color: #DAEAF0;
   color: #3B474B;
   height: 285px;
-  padding: 80px 25px 50px 25px;
+  padding: 80px 15px 50px 15px;
 }
 
 #skillsInfo {
@@ -551,11 +551,11 @@ input[type=text], select, textarea {
   }
 
   .Curly-Left {
-    padding-left: 50px;
+    padding-left: 40px;
   }
 
   .Curly-Right {
-    padding-right: 50px;
+    padding-right: 40px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -566,12 +566,12 @@ input[type=text], select, textarea {
   }
 
   .Curly-Left {
-    padding-left: 100px;
+    padding-left: 90px;
     width: 60px;
   }
 
   .Curly-Right {
-    padding-right: 100px;
+    padding-right: 90px;
     width: 60px;
   }
 }
