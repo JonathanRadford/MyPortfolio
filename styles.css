@@ -237,6 +237,18 @@ a {
   color: #3B474B;
 }
 
+#About-Me {
+  background-color: #3B474B;
+  color: #E9EFF4;
+  height: 288px;
+  padding: 80px 25px 50px 25px;
+}
+
+@media screen and (min-width: 1024px) {
+  #About-Me {
+    padding: 100px 25px 120px 25px;
+  }
+}
 .Landing-page {
   text-align: center;
   color: #3B474B;
@@ -258,44 +270,82 @@ a {
   width: auto;
 }
 
-#About-Me {
-  background-color: #3B474B;
-  color: #E9EFF4;
-  height: 288px;
-  padding: 80px 25px 50px 25px;
+@media screen and (min-width: 768px) {
+  #Landing__Profile {
+    margin-top: 200px;
+    height: 220px;
+    width: auto;
+  }
 }
+@media screen and (min-width: 1024px) {
+  #Landing__Profile {
+    margin-top: 200px;
+    height: 250px;
+    width: auto;
+  }
 
-#skills {
+  #Background-Image {
+    padding-bottom: 200px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #Background-Image {
+    padding-bottom: 260px;
+    height: 800px;
+  }
+}
+#Footer {
   background-color: #DAEAF0;
   color: #3B474B;
-  height: 285px;
-  padding: 80px 25px 50px 25px;
-}
-
-#skillsInfo {
-  padding-top: 50px;
-  display: grid;
-}
-
-.Curly-Left {
-  grid-column: 3/6;
-  grid-row: 1/12;
   height: auto;
-  width: 40px;
+  padding: 80px 30px 50px 30px;
 }
 
-.Curly-Right {
-  grid-column: 9/12;
-  grid-row: 1/12;
-  height: auto;
-  width: 40px;
+input[type=text], select, textarea {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
 }
 
-.skillsParagraph {
-  grid-column: 8;
-  grid-row: 6/9;
-}
+@media screen and (min-width: 550px) {
+  input {
+    width: 100%;
+    margin-top: 0;
+  }
 
+  input[type=text], select, textarea {
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  input[type=text], select, textarea {
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #Footer {
+    padding-top: 100px;
+  }
+
+  input[type=text], select, textarea {
+    width: 60%;
+    margin-left: 180px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  input[type=text], select, textarea {
+    width: 45%;
+    margin-left: 370px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  input[type=text], select, textarea {
+    width: 40%;
+    margin-left: 530px;
+  }
+}
 #Projects {
   background-color: #3B474B;
   color: #E9EFF4;
@@ -378,46 +428,7 @@ a {
   grid-row: 9/11;
 }
 
-#Footer {
-  background-color: #DAEAF0;
-  color: #3B474B;
-  height: auto;
-  padding: 80px 30px 50px 30px;
-}
-
-input[type=text], select, textarea {
-  width: 90%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
-
-@media screen and (min-width: 550px) {
-  input {
-    width: 100%;
-    margin-top: 0;
-  }
-
-  input[type=text], select, textarea {
-    margin-left: 10px;
-  }
-}
 @media screen and (min-width: 768px) {
-  #Landing__Profile {
-    margin-top: 200px;
-    height: 220px;
-    width: auto;
-  }
-
-  .Curly-Left {
-    padding-left: 50px;
-  }
-
-  .Curly-Right {
-    padding-right: 50px;
-  }
-
   #Projects {
     height: 900px;
     padding-top: 100px;
@@ -431,26 +442,57 @@ input[type=text], select, textarea {
   .Project__Text {
     padding: 25px 25px 0 25px;
   }
+}
+@media screen and (min-width: 1024px) {
+  #Project__Information {
+    padding: 95px 0 0 0;
+  }
 
-  input[type=text], select, textarea {
-    margin-left: 20px;
+  .Project__Images {
+    margin-left: 50px;
+  }
+}
+#skills {
+  background-color: #DAEAF0;
+  color: #3B474B;
+  height: 285px;
+  padding: 80px 25px 50px 25px;
+}
+
+#skillsInfo {
+  padding-top: 50px;
+  display: grid;
+}
+
+.Curly-Left {
+  grid-column: 3/6;
+  grid-row: 1/12;
+  height: auto;
+  width: 40px;
+}
+
+.Curly-Right {
+  grid-column: 9/12;
+  grid-row: 1/12;
+  height: auto;
+  width: 40px;
+}
+
+.skillsParagraph {
+  grid-column: 8;
+  grid-row: 6/9;
+}
+
+@media screen and (min-width: 768px) {
+  .Curly-Left {
+    padding-left: 50px;
+  }
+
+  .Curly-Right {
+    padding-right: 50px;
   }
 }
 @media screen and (min-width: 1024px) {
-  #Landing__Profile {
-    margin-top: 200px;
-    height: 250px;
-    width: auto;
-  }
-
-  #Background-Image {
-    padding-bottom: 200px;
-  }
-
-  #About-Me {
-    padding: 100px 25px 120px 25px;
-  }
-
   #skills {
     padding-top: 100px;
     padding-bottom: 120px;
@@ -462,39 +504,5 @@ input[type=text], select, textarea {
 
   .Curly-Right {
     padding-right: 100px;
-  }
-
-  #Project__Information {
-    padding: 95px 0 0 0;
-  }
-
-  .Project__Images {
-    margin-left: 50px;
-  }
-
-  #Footer {
-    padding-top: 100px;
-  }
-
-  input[type=text], select, textarea {
-    width: 60%;
-    margin-left: 180px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  #Background-Image {
-    padding-bottom: 260px;
-    height: 800px;
-  }
-
-  input[type=text], select, textarea {
-    width: 45%;
-    margin-left: 370px;
-  }
-}
-@media screen and (min-width: 1920px) {
-  input[type=text], select, textarea {
-    width: 40%;
-    margin-left: 530px;
   }
 }

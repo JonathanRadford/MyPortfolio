@@ -1,0 +1,52 @@
+#skills{
+  background-color: $primary-colors;
+  color: $secondary-colors;
+  height: 285px;
+  padding: 80px 25px 50px 25px;
+}
+
+#skillsInfo{
+  padding-top: 50px;
+  display: grid;
+}
+
+.Curly-Left {
+  grid-column: 3/6;
+  grid-row: 1/12;
+  height: auto;
+  width: 40px;
+}
+.Curly-Right {
+  grid-column: 9/12;
+  grid-row: 1/12;
+  height: auto;
+  width: 40px;
+}
+
+.skillsParagraph{
+  grid-column: 8;
+  grid-row: 6/9;
+}
+
+@media screen and (min-width: 768px) {
+  .Curly-Left {
+    padding-left: 50px;
+   }
+  .Curly-Right {
+     padding-right: 50px;
+   }
+}
+
+
+@media screen and (min-width: 1024px) {
+#skills{
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+.Curly-Left {
+ padding-left: 100px;
+}
+.Curly-Right {
+  padding-right: 100px;
+}
+}
