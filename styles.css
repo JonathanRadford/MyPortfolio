@@ -434,14 +434,19 @@ input[type=text], select, textarea {
 }
 
 .project-info {
+  display: none;
+}
+
+.project-hover:hover {
+  display: block;
   margin-top: 5px;
-  border: 1px solid #DAEAF0;
+  border: 2px solid #DAEAF0;
   border-radius: 10px;
   background-color: #3B474B;
 }
 
-.project-info:hover {
-  transform: scale(1.5);
+.Project__Text:hover + .project-info {
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
