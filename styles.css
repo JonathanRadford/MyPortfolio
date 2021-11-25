@@ -408,78 +408,40 @@ input[type=text], select, textarea {
 }
 
 #Project__Information {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  padding: 75px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.Project__Images {
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: 250px;
+}
+
+.gif-images {
+  border: 2px solid #DAEAF0;
   border-radius: 10px;
+  width: 150px;
+  height: auto;
+  transition: all 0.2s ease-in-out;
 }
 
-.Project__Text {
-  padding: 10px 0 0 5px;
+.gif-images:hover {
+  transform: scale(1.5);
 }
 
-#Project-Image1 {
-  grid-column: 1/2;
-  grid-row: 1/3;
+.project-info {
+  margin-top: 5px;
+  border: 1px solid #DAEAF0;
+  border-radius: 10px;
+  background-color: #3B474B;
 }
 
-#Project-Image2 {
-  grid-column: 7/8;
-  grid-row: 1/3;
-}
-
-#Project-Image3 {
-  grid-column: 1/2;
-  grid-row: 5/7;
-}
-
-#Project-Image4 {
-  grid-column: 7/9;
-  grid-row: 5/7;
-}
-
-#Project-Image5 {
-  grid-column: 1/2;
-  grid-row: 9/11;
-}
-
-#Project-Image6 {
-  grid-column: 7/9;
-  grid-row: 9/11;
-}
-
-#Project-Text1 {
-  grid-column: 2/6;
-  grid-row: 1/3;
-}
-
-#Project-Text2 {
-  grid-column: 8/12;
-  grid-row: 1/3;
-}
-
-#Project-Text3 {
-  grid-column: 2/6;
-  grid-row: 5/7;
-}
-
-#Project-Text4 {
-  grid-column: 8/12;
-  grid-row: 5/7;
-}
-
-#Project-Text5 {
-  grid-column: 2/6;
-  grid-row: 9/11;
-}
-
-#Project-Text6 {
-  grid-column: 8/12;
-  grid-row: 9/11;
+.project-info:hover {
+  transform: scale(1.5);
 }
 
 @media screen and (min-width: 768px) {
@@ -496,12 +458,25 @@ input[type=text], select, textarea {
   .Project__Text {
     padding: 20px 25px 0 25px;
   }
-}
-@media screen and (min-width: 1024px) {
-  #Project__Information {
-    padding: 20px 0 0 0;
+
+  .projects {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    width: 450px;
   }
 
+  #game-gif {
+    width: 275px;
+    height: auto;
+  }
+
+  #calculator-gif {
+    width: 275px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
   .Project__Images {
     height: 115px;
   }
@@ -512,6 +487,13 @@ input[type=text], select, textarea {
 
   .Project__Images {
     margin-left: 50px;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    width: 700px;
   }
 }
 #skills {
