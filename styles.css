@@ -433,20 +433,8 @@ input[type=text], select, textarea {
   transform: scale(1.5);
 }
 
-.project-info {
-  display: none;
-}
-
-.project-hover:hover {
-  display: block;
-  margin-top: 5px;
-  border: 2px solid #DAEAF0;
-  border-radius: 10px;
-  background-color: #3B474B;
-}
-
-.Project__Text:hover + .project-info {
-  display: block;
+.Project__Text {
+  padding: 20px 25px 20px 25px;
 }
 
 @media screen and (min-width: 768px) {
@@ -461,13 +449,11 @@ input[type=text], select, textarea {
   }
 
   .Project__Text {
-    padding: 20px 25px 0 25px;
+    padding: 20px 25px 20px 25px;
   }
 
   .projects {
     display: flex;
-    flex-direction: row;
-    padding: 25px;
     width: 450px;
   }
 
@@ -480,6 +466,11 @@ input[type=text], select, textarea {
     width: 275px;
     height: auto;
   }
+
+  #Morse-code-gif {
+    width: 275px;
+    height: auto;
+  }
 }
 @media screen and (min-width: 1024px) {
   .Project__Images {
@@ -487,7 +478,7 @@ input[type=text], select, textarea {
   }
 
   .Project__Text {
-    padding: 10px 0px 0 5px;
+    padding: 10px 0px 10px 5px;
   }
 
   .Project__Images {
@@ -496,8 +487,6 @@ input[type=text], select, textarea {
 
   .projects {
     display: flex;
-    flex-direction: row;
-    padding: 25px;
     width: 700px;
   }
 }
