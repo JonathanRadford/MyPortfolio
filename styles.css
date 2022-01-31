@@ -49,38 +49,127 @@
   }
 }
 .navbar {
-  background-color: #DAEAF0;
+  background-color: #daeaf0;
   height: 70px;
   width: 100%;
   position: fixed;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
-  border-bottom: 1px solid #3B474B;
+  border-bottom: 1px solid #3b474b;
+  line-height: 20px;
+  justify-content: center;
+  transition: 0.4s;
+}
+.navbar > .Navbar__Links {
+  display: none;
+}
+
+.smallNav {
+  background-color: #daeaf0;
+  height: 200px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1px solid #3b474b;
+  transition: 0.4s;
+}
+.smallNav > .Navbar__Links {
+  display: block;
+  padding: 2px;
+}
+
+.smallNav > #name {
+  display: none;
+  transition: 0.4s;
+}
+
+.navbar > #name {
+  display: flex;
+  transition: 0.4s;
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+  position: fixed;
+  left: 85%;
+  top: 10px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.change .Navbar__Links .Navbar__Links {
+  display: none;
 }
 
 #Navbar__Logo {
   height: 70px;
 }
 
-@media screen and (max-width: 550px) {
-  .Navbar__Links {
-    display: none;
+@media screen and (min-width: 426px) {
+  .smallNav {
+    background-color: #daeaf0;
+    height: 150px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid #3b474b;
+    transition: 0.4s;
+    flex-direction: column;
   }
 }
-@media screen and (min-width: 550px) {
-  #Navbar__Logo {
-    padding-left: 50px;
+@media screen and (min-width: 768px) {
+  .container {
+    display: none;
+  }
+
+  .navbar {
+    background-color: #daeaf0;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #3b474b;
+    transition: 0.4s;
+  }
+  .navbar > .Navbar__Links {
+    display: block;
   }
 }
 @media screen and (min-width: 1024px) {
   .navbar {
     height: 100px;
-  }
-
-  #Navbar__Logo {
-    height: 99px;
   }
 }
 * {
@@ -91,7 +180,9 @@
   line-height: 1rem;
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
   text-align: center;
 }
 
@@ -132,10 +223,6 @@ a {
   }
 }
 @media screen and (min-width: 768px) {
-  h1, h2, p {
-    padding: 10px 20px 10px 0px;
-  }
-
   h1 {
     font-size: 35px;
     line-height: 2rem;
@@ -150,7 +237,9 @@ a {
   }
 }
 @media screen and (min-width: 1024px) {
-  h1, h2, p {
+  h1,
+h2,
+p {
     padding: 10px 50px 10px 50px;
   }
 
@@ -170,7 +259,9 @@ a {
   }
 }
 @media screen and (min-width: 1440px) {
-  h1, h2, p {
+  h1,
+h2,
+p {
     padding: 10px 80px 10px 80px;
   }
 
@@ -205,7 +296,7 @@ a {
 }
 
 .fa-react {
-  color: #61DBFB;
+  color: #61dbfb;
 }
 
 .fa-css3-alt {
@@ -232,14 +323,19 @@ a {
   padding-top: 20px;
 }
 
-.Footer__GitHub {
+.footer__gitHub {
   color: #171515;
-  padding: 0 10px 0 10px;
+  padding: 0 20px 0 20px;
 }
 
-.Footer__Linkedin {
+.footer__linkedin {
   color: #0072b1;
-  padding: 0 10px 0 10px;
+  padding: 0 20px 0 20px;
+}
+
+.footer__twitter {
+  color: #08a0e9;
+  padding: 0 20px 0 20px;
 }
 
 .fab:hover {
@@ -404,7 +500,7 @@ input[type=text], select, textarea {
   background-color: #3B474B;
   color: #E9EFF4;
   height: 620px;
-  padding: 80px 20px 80px 20px;
+  padding: 10px 20px 80px 20px;
 }
 
 #Project__Information {
@@ -417,7 +513,7 @@ input[type=text], select, textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+  padding: 5px;
   width: 250px;
 }
 
@@ -430,17 +526,17 @@ input[type=text], select, textarea {
 }
 
 .gif-images:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 .Project__Text {
-  padding: 20px 25px 20px 25px;
+  padding: 15px 25px 15px 25px;
 }
 
 @media screen and (min-width: 768px) {
   #Projects {
-    height: 900px;
-    padding-top: 100px;
+    height: 950px;
+    padding-top: 80px;
   }
 
   .Project__Images {
@@ -468,6 +564,11 @@ input[type=text], select, textarea {
   }
 
   #Morse-code-gif {
+    width: 275px;
+    height: auto;
+  }
+
+  #Beers-API-gif {
     width: 275px;
     height: auto;
   }

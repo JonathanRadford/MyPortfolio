@@ -1,83 +1,85 @@
-#Projects{
+#Projects {
   background-color: $secondary-colors;
   color: $tertiary-colors;
   height: 620px;
-  padding: 80px 20px 80px 20px;
+  padding: 10px 20px 80px 20px;
 }
 
-#Project__Information{
+#Project__Information {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.projects{
+.projects {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+  padding: 5px;
   width: 250px;
 }
-.gif-images{
+.gif-images {
   border: 2px solid $primary-colors;
   border-radius: 10px;
   width: 150px;
   height: auto;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
-.gif-images:hover { 
-  transform: scale(1.5); 
-}
-
-.Project__Text{
-  padding: 20px 25px 20px 25px;
+.gif-images:hover {
+  transform: scale(1.2);
 }
 
-  @media screen and (min-width: 768px) {
-     #Projects{
-      height: 900px;
-      padding-top: 100px;
-    }
-     .Project__Images{
-      border-radius: 10px;
-      height: 125px;
-    }
-    .Project__Text{
-      padding: 20px 25px 20px 25px;
-    }
-    .projects{
-      display: flex;
-      width: 450px;
-    }
-    #game-gif{
-      width: 275px;
-      height: auto;
-    }
-    
-    #calculator-gif{
-      width: 275px;
-      height: auto;
-    }
-    #Morse-code-gif{
-      width: 275px;
-      height: auto;
-    }
+.Project__Text {
+  padding: 15px 25px 15px 25px;
 }
-   
+
+@media screen and (min-width: 768px) {
+  #Projects {
+    height: 950px;
+    padding-top: 80px;
+  }
+  .Project__Images {
+    border-radius: 10px;
+    height: 125px;
+  }
+  .Project__Text {
+    padding: 20px 25px 20px 25px;
+  }
+  .projects {
+    display: flex;
+    width: 450px;
+  }
+  #game-gif {
+    width: 275px;
+    height: auto;
+  }
+
+  #calculator-gif {
+    width: 275px;
+    height: auto;
+  }
+  #Morse-code-gif {
+    width: 275px;
+    height: auto;
+  }
+  #Beers-API-gif {
+    width: 275px;
+    height: auto;
+  }
+}
+
 @media screen and (min-width: 1024px) {
-
-.Project__Images{
-  height: 115px;
-}
-.Project__Text{
-  padding: 10px 0px 10px 5px;
-}
-.Project__Images{
-  margin-left: 50px;
-}
-.projects{
-  display: flex;
-  width: 700px;
-}
-
+  .Project__Images {
+    height: 115px;
+  }
+  .Project__Text {
+    padding: 10px 0px 10px 5px;
+  }
+  .Project__Images {
+    margin-left: 50px;
+  }
+  .projects {
+    display: flex;
+    width: 700px;
+  }
 }

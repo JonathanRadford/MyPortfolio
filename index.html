@@ -18,20 +18,27 @@
 
 <body>
   <header>
-    <nav class="navbar">
+    <nav id="Navbar__Links" class="navbar" >
       <a class="Navbar__Links" href="#About-Me">
         <h2>About</h2>
       </a>
       <a class="Navbar__Links" href="#skills">
-        <h2 class="Navbar__Links"> Skills</h2>
+        <h2> Skills</h2>
       </a>
-      <a href="#Background-Image"><img id="Navbar__Logo" src="images\logo.png" alt="Jonathan Radford"></a>
+      <a id="name" class="Navbar__Links" href="#Navbar__Links">
+        <h2>Jonathan<br> Radford</h2>
+      </a>
       <a class="Navbar__Links" href="#Projects">
-        <h2 class="Navbar__Links">Projects</h2>
+        <h2>Projects</h2>
       </a>
       <a class="Navbar__Links" href="#Footer">
-        <h2 class="Navbar__Links">Contact</h2>
+        <h2>Contact</h2>
       </a>
+      <div id="navbar-container" class="container" onclick="myFunction(this), changeClass()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
     </nav>
   </header>
   <main>
@@ -78,35 +85,23 @@
         <span class="projects"><p id="Project-Text2" class="Project__Text">Calculator.</p><a href="https://jonathanradford.github.io/Calculator/"><img id="calculator-gif"
               class="gif-images" src="./images/Calculator.gif"></a>
           
-        </span>
-        <span class="projects"><p id="Project-Text3" class="Project__Text">Morse Code Translator</p><a href="https://jonathanradford.github.io/morse-code/"></a><img id="Morse-code-gif" class="gif-images" src="./images/Morse-code.gif"></a> 
-        </span>
+            </span>
+            <span class="projects"><p id="Project-Text3" class="Project__Text">Morse Code Translator</p><a href="https://jonathanradford.github.io/morse-code/"></a><img id="Morse-code-gif" class="gif-images" src="./images/Morse-code.gif"></a> 
+            </span>
+            <span class="projects"><p id="Project-Text4" class="Project__Text">Beers API</p><a href="https://jonathanradford.github.io/"></a><img id="Beers-API-gif" class="gif-images" src="./images/Beers-Api.gif"></a> 
+            </span>
+          </span>
       </span>
     </section>
   </main>
   <footer id="Footer">
     <h2>Contact.</h2><br>
-    <p>If you would like to contact me directly, please leave a message and I’ll get back to you as soon as possible.
+    <p>If you would like to contact me, you can find my GitHub, Linkedin, and Twitter pages below.
     </p><br>
-    <div class="Footer__Contact">
-      <form action="" method="get" onsubmit="return submitMessage(event);">
-        <p class="Footer__Text">Email:</p>
-        <label class="Footer__Email" for="email"></label>
-        <input type="text" name="email" id="email" required>
-        <p class="Footer__Text">Full Name:</p>
-        <label class="Footer__FName" for="fullName"></label>
-        <input type="text" name="fullName" id="fullName" required>
-        <p class="Footer__Text">Comment:</p>
-        <label class="Footer__Comment" for="comment"></label>
-        <textarea name="comment" id="comment" cols="20" rows="6" onfocus="this.value=''" required></textarea>
-    </div>
-    <div id="Footer__Btn">
-      <input class="btn-primary btn-clear" type="reset" value="Clear">
-      <input class="btn-primary btn-submit" type="submit">
-    </div>
     <div class="Footer__Icons">
-      <a href="https://github.com/JonathanRadford" target="_blank"><i class="fab fa-github Footer__GitHub"></i></a>
-      <a href="https://github.com/JonathanRadford" target="_blank"><i class="fab fa-linkedin Footer__Linkedin"></i></a>
+      <a href="https://github.com/JonathanRadford" target="_blank"><i class="fab fa-github footer__gitHub"></i></a>
+      <a href="https://github.com/JonathanRadford" target="_blank"><i class="fab fa-linkedin footer__linkedin"></i></a>
+      <a href="https://www.linkedin.com/in/jonathan-radford-433332a9/" target="_blank"><i class="fab fa-twitter footer__twitter"></i></a>
     </div>
   </footer>
   <script src="index.js"></script>

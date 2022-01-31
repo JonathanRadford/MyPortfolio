@@ -1,42 +1,132 @@
 @import "_variables";
 
-
-.navbar{
-  background-color: $primary-colors;
+.navbar {
+  background-color: #daeaf0;
   height: 70px;
   width: 100%;
   position: fixed;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around; 
+  flex-direction: column;
   align-items: center;
-  border-bottom: 1px solid $secondary-colors;
+  border-bottom: 1px solid #3b474b;
+  line-height: 20px;
+  justify-content: center;
+  transition: 0.4s;
+  > .Navbar__Links {
+    display: none;
+  }
 }
 
-#Navbar__Logo{
+.smallNav {
+  background-color: #daeaf0;
+  height: 200px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1px solid #3b474b;
+  transition: 0.4s;
+  > .Navbar__Links {
+    display: block;
+    padding: 2px;
+  }
+}
+
+.smallNav > #name {
+  display: none;
+  transition: 0.4s;
+}
+.navbar > #name {
+  display: flex;
+  transition: 0.4s;
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+  position: fixed;
+  left: 85%;
+  top: 10px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.change .Navbar__Links {
+  .Navbar__Links {
+    display: none;
+  }
+}
+
+#Navbar__Logo {
   height: 70px;
 }
 
-@media screen and (max-width: 550px){
- .Navbar__Links{
+@media screen and (min-width: 376px) {
+}
+
+@media screen and (min-width: 426px) {
+  .smallNav {
+    background-color: #daeaf0;
+    height: 150px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid #3b474b;
+    transition: 0.4s;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
     display: none;
+  }
 
+  .navbar {
+    background-color: #daeaf0;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #3b474b;
+    transition: 0.4s;
+    > .Navbar__Links {
+      display: block;
+    }
   }
 }
 
-@media screen and (min-width: 550px){
-   #Navbar__Logo{
-    padding-left: 50px;
-  }
-}
-
-@media screen and (min-width: 1024px){
-  .navbar{
+@media screen and (min-width: 1024px) {
+  .navbar {
     height: 100px;
- }
-   #Navbar__Logo{
-    height: 99px;
   }
 }
-
-
