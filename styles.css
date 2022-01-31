@@ -440,48 +440,16 @@ p {
   background-color: #DAEAF0;
   color: #3B474B;
   height: auto;
-  padding: 80px 30px 50px 30px;
+  padding: 110px 30px 50px 30px;
+  height: 500px;
 }
 
-input[type=text], select, textarea {
-  width: 90%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
-
-@media screen and (min-width: 550px) {
-  input {
-    width: 100%;
-    margin-top: 0;
-  }
-
-  input[type=text], select, textarea {
-    margin-left: 10px;
-  }
-}
-@media screen and (min-width: 768px) {
-  input[type=text], select, textarea {
-    margin-left: 20px;
-  }
-}
 @media screen and (min-width: 1024px) {
   #Footer {
     padding-top: 100px;
   }
-
-  input[type=text], select, textarea {
-    width: 60%;
-    margin-left: 180px;
-  }
 }
 @media screen and (min-width: 1440px) {
-  input[type=text], select, textarea {
-    width: 35%;
-    margin-left: 430px;
-  }
-
   #Footer > p {
     margin-bottom: 5px;
   }
@@ -489,11 +457,6 @@ input[type=text], select, textarea {
   .Footer__Text {
     font-size: 1rem;
     padding-top: 5px;
-  }
-}
-@media screen and (min-width: 1920px) {
-  input[type=text], select, textarea {
-    margin-left: 570px;
   }
 }
 #Projects {
