@@ -60,6 +60,7 @@
   line-height: 20px;
   justify-content: center;
   transition: 0.4s;
+  z-index: 2;
 }
 .navbar > .Navbar__Links {
   display: none;
@@ -472,88 +473,73 @@ p {
   align-items: center;
 }
 
+.project {
+  position: relative;
+  overflow: hidden;
+  border: 3px solid black;
+  border-radius: 15px;
+  z-index: 1;
+}
+.project > img {
+  width: 100%;
+  max-width: 800px;
+  object-fit: cover;
+  object-position: center;
+}
+.project > .content {
+  color: #3B474B;
+  inset: 0;
+  font-size: 0.6rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0 3px black;
+}
+.project > .content > a {
+  font-size: 0.6rem;
+}
+.project > h1 {
+  position: absolute;
+  inset: 0;
+  font-size: 2rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project:hover > img.gif-images {
+  filter: blur(10px);
+}
+
+.project > .content.fade {
+  opacity: 0;
+}
+
+.project:hover > .content.fade {
+  opacity: 1;
+}
+
+.project > img,
+.project > .content {
+  transition: 200ms ease-in-out;
+}
+
 .projects {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 5px;
-  width: 250px;
-}
-
-.gif-images {
-  border: 2px solid #DAEAF0;
-  border-radius: 10px;
-  width: 150px;
-  height: auto;
-  transition: all 0.2s ease-in-out;
-}
-
-.gif-images:hover {
-  transform: scale(1.2);
 }
 
 .Project__Text {
   padding: 15px 25px 15px 25px;
 }
 
-@media screen and (min-width: 768px) {
-  #Projects {
-    height: 950px;
-    padding-top: 80px;
-  }
-
-  .Project__Images {
-    border-radius: 10px;
-    height: 125px;
-  }
-
-  .Project__Text {
-    padding: 20px 25px 20px 25px;
-  }
-
-  .projects {
-    display: flex;
-    width: 450px;
-  }
-
-  #game-gif {
-    width: 275px;
-    height: auto;
-  }
-
-  #calculator-gif {
-    width: 275px;
-    height: auto;
-  }
-
-  #Morse-code-gif {
-    width: 275px;
-    height: auto;
-  }
-
-  #Beers-API-gif {
-    width: 275px;
-    height: auto;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .Project__Images {
-    height: 115px;
-  }
-
-  .Project__Text {
-    padding: 10px 0px 10px 5px;
-  }
-
-  .Project__Images {
-    margin-left: 50px;
-  }
-
-  .projects {
-    display: flex;
-    width: 700px;
-  }
-}
 #skills {
   background-color: #DAEAF0;
   color: #3B474B;

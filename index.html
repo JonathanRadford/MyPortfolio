@@ -1,110 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Open+Sans:wght@600;700;800&family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Jonathan Radford</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Open+Sans:wght@600;700;800&family=Ubuntu:wght@500&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <link rel="stylesheet" href="styles.css">
-  <title>Jonathan Radford</title>
-</head>
+  <body>
+    <header>
+      <nav id="Navbar__Links" class="navbar">
+        <a class="Navbar__Links" href="#About-Me">
+          <h2>About</h2>
+        </a>
+        <a class="Navbar__Links" href="#skills">
+          <h2>Skills</h2>
+        </a>
+        <a id="name" class="Navbar__Links">
+          <h2>
+            Jonathan<br />
+            Radford
+          </h2>
+        </a>
+        <a class="Navbar__Links" href="#Projects">
+          <h2>Projects</h2>
+        </a>
+        <a class="Navbar__Links" href="#Footer">
+          <h2>Contact</h2>
+        </a>
+        <div
+          id="navbar-container"
+          class="container"
+          onclick="myFunction(this), changeClass()"
+        >
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="Background-Image" alt="Welsh Mountains">
+        <div class="Landing-page">
+          <img
+            id="Landing__Profile"
+            src="images\Jonny.png"
+            alt="Jonathan Headshot"
+          />
 
-<body>
-  <header>
-    <nav id="Navbar__Links" class="navbar" >
-      <a class="Navbar__Links" href="#About-Me">
-        <h2>About</h2>
-      </a>
-      <a class="Navbar__Links" href="#skills">
-        <h2> Skills</h2>
-      </a>
-      <a id="name" class="Navbar__Links">
-        <h2>Jonathan<br> Radford</h2>
-      </a>
-      <a class="Navbar__Links" href="#Projects">
-        <h2>Projects</h2>
-      </a>
-      <a class="Navbar__Links" href="#Footer">
-        <h2>Contact</h2>
-      </a>
-      <div id="navbar-container" class="container" onclick="myFunction(this), changeClass()">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
+          <h1>
+            My name is Jonathan, <br />
+            and I’m a Software Developer.
+          </h1>
+        </div>
       </div>
-    </nav>
-  </header>
-  <main>
-    <div id="Background-Image" alt="Welsh Mountains">
-      <div class="Landing-page">
-        <img id="Landing__Profile" src="images\Jonny.png" alt="Jonathan Headshot">
-
-        <h1>My name is Jonathan, <br> and I’m a Software Developer.</h1>
-      </div>
-    </div>
-    <section id="About-Me">
-      <h2>About Me.</h2> <br>
-      <p>I’m a London-based Software Developer from Wales, with a passion for designing intuitive and beautiful
-        projects.</p>
-      <br>
-      <p>As a graduate of _Nology, combined with a Master of Arts from the RWCMD, my creative and technological skills
-        could be the perfect combination to create the innovative and effective software solutions you’re looking for.
-      </p>
-    </section>
-    <section id="skills">
-      <h2>Skills.</h2>
-      <div id="skillsInfo">
-        <img class="Curly-Left" src="images\Curly-Left (2).png" alt="">
-        <p class="skillsParagraph">Through my study at _nology I have amassed a variety of essential coding languages
-          and design skills for Front-End and Back-End development.</p>
-        <img class="Curly-Right" src="images\Curly-Left (3).png" alt="">
-      </div>
-      <div id="skills__icons">
-        <i class="fab fa-react fa-3x"></i>
-        <i class="fab fa-css3-alt fa-3x"></i>
-        <i class="fab fa-js fa-3x"></i>
-        <i class="fab fa-java fa-3x"></i>
-        <i class="fab fa-html5 fa-3x"></i>
-      </div>
-    </section>
-    <section id="Projects">
-      <h2>Projects.</h2><br>
-      <span id="Project__Information">
-        <span class="projects">
-          <p id="Project-Text1" class="Project__Text">Adventure in Codeshire!</p><a
-            href="https://jonathanradford.github.io/Game/"><img id="game-gif" class="gif-images"
-              src="./images/Game.gif"></a>
-        </span>
-        <span class="projects"><p id="Project-Text2" class="Project__Text">Calculator.</p><a href="https://jonathanradford.github.io/Calculator/"><img id="calculator-gif"
-              class="gif-images" src="./images/Calculator.gif"></a>
-          
-            </span>
-            <span class="projects"><p id="Project-Text3" class="Project__Text">Morse Code Translator</p><a href="https://jonathanradford.github.io/morse-code/"></a><img id="Morse-code-gif" class="gif-images" src="./images/Morse-code.gif"></a> 
-            </span>
-            <span class="projects"><p id="Project-Text4" class="Project__Text">Beers API</p><a href="https://jonathanradford.github.io/punk-api/"></a><img id="Beers-API-gif" class="gif-images" src="./images/Beers-Api.gif"></a> 
-            </span>
+      <section id="About-Me">
+        <h2>About Me.</h2>
+        <br />
+        <p>
+          I’m a London-based Software Developer from Wales, with a passion for
+          designing intuitive and beautiful projects.
+        </p>
+        <br />
+        <p>
+          As a graduate of _Nology, combined with a Master of Arts from the
+          RWCMD, my creative and technological skills could be the perfect
+          combination to create the innovative and effective software solutions
+          you’re looking for.
+        </p>
+      </section>
+      <section id="skills">
+        <h2>Skills.</h2>
+        <div id="skillsInfo">
+          <img class="Curly-Left" src="images\Curly-Left (2).png" alt="" />
+          <p class="skillsParagraph">
+            Through my study at _nology I have amassed a variety of essential
+            coding languages and design skills for Front-End and Back-End
+            development.
+          </p>
+          <img class="Curly-Right" src="images\Curly-Left (3).png" alt="" />
+        </div>
+        <div id="skills__icons">
+          <i class="fab fa-react fa-3x"></i>
+          <i class="fab fa-css3-alt fa-3x"></i>
+          <i class="fab fa-js fa-3x"></i>
+          <i class="fab fa-java fa-3x"></i>
+          <i class="fab fa-html5 fa-3x"></i>
+        </div>
+      </section>
+      <section id="Projects">
+        <h2>Projects.</h2>
+        <br />
+        <span id="Project__Information">
+          <span class="projects">
+            <p id="Project-Text1" class="Project__Text">
+              Adventure in Codeshire!
+            </p>
+            <div class="project">
+              <img id="game-gif" class="gif-images" src="./images/Game.gif" />
+              <h1 class="content fade">
+                Take an trip through the land of Codeshire! <br /><br /><a
+                  class="content fade"
+                  href="https://jonathanradford.github.io/Game/"
+                  >Link</a
+                >
+              </h1>
+            </div>
           </span>
-      </span>
-    </section>
-  </main>
-  <footer id="Footer">
-    <h2>Contact.</h2><br>
-    <p>If you would like to contact me, you can find my GitHub, Linkedin, and Twitter pages below.
-    </p><br>
-    <div class="Footer__Icons">
-      <a href="https://github.com/JonathanRadford" target="_blank"><i class="fab fa-github footer__gitHub"></i></a>
-      <a href="https://github.com/JonathanRadford" target="_blank"><i class="fab fa-linkedin footer__linkedin"></i></a>
-      <a href="https://www.linkedin.com/in/jonathan-radford-433332a9/" target="_blank"><i class="fab fa-twitter footer__twitter"></i></a>
-    </div>
-  </footer>
-  <script src="index.js"></script>
-</body>
-
+          <span class="projects">
+            <p id="Project-Text2" class="Project__Text">Calculator.</p>
+            <div class="project">
+              <img
+                id="calculator-gif"
+                class="gif-images"
+                src="./images/Calculator.gif"
+              />
+              <h1 class="content fade">
+                Use this calculator to your advantage! <br /><br /><a
+                  class="content fade"
+                  href="https://jonathanradford.github.io/Calculator/"
+                  >Link</a
+                >
+              </h1>
+            </div>
+          </span>
+          <span class="projects">
+            <p id="Project-Text3" class="Project__Text">
+              Morse Code Translator
+            </p>
+            <div class="project">
+              <img
+                id="Morse-code-gif"
+                class="gif-images"
+                src="./images/Morse-code.gif"
+              />
+              <h1 class="content fade">
+                Discover a coded language with Morse Code! <br /><br /><a
+                  class="content fade"
+                  href="https://jonathanradford.github.io/morse-code/"
+                  >Link</a
+                >
+              </h1>
+            </div>
+          </span>
+          <span class="projects">
+            <p id="Project-Text4" class="Project__Text">Beers API</p>
+            <div class="project">
+              <img
+                id="Beers-API-gif"
+                class="gif-images"
+                src="./images/Beers-Api.gif"
+              />
+              <h1 class="content fade">
+                Find you favourite Beer from the API list! <br /><br /><a
+                  class="content fade"
+                  href="https://jonathanradford.github.io/punk-api/"
+                  >Link</a
+                >
+              </h1>
+            </div>
+          </span>
+        </span>
+      </section>
+    </main>
+    <footer id="Footer">
+      <h2>Contact.</h2>
+      <br />
+      <p>
+        If you would like to contact me, you can find my GitHub, Linkedin, and
+        Twitter pages below.
+      </p>
+      <br />
+      <div class="Footer__Icons">
+        <a href="https://github.com/JonathanRadford" target="_blank"
+          ><i class="fab fa-github footer__gitHub"></i
+        ></a>
+        <a href="https://github.com/JonathanRadford" target="_blank"
+          ><i class="fab fa-linkedin footer__linkedin"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/jonathan-radford-433332a9/"
+          target="_blank"
+          ><i class="fab fa-twitter footer__twitter"></i
+        ></a>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
 </html>
