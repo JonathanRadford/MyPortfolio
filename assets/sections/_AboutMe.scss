@@ -1,28 +1,30 @@
-#About-Me{
-  background-color: $secondary-colors;
-  color: $tertiary-colors;
-  height: 288px;
-  padding: 80px 25px 50px 25px;
+#About-Me {
+  background: url(wave-haikei.svg);
+  z-index: -1;
+  color: #e9eff4;
+  height: 550px;
+  background-size: cover;
+  padding: 40px 40px 0;
 }
 
 @media screen and (min-width: 768px) {
-  #About-Me{
-    height: 350px;
-    
-  padding: 120px 25px 50px 25px;
+  #About-Me {
+    height: 500px;
+
+    padding: 120px 25px 50px 25px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-#About-Me{
-  padding: 200px 25px 120px 25px;
-  height: 550px;
-}
+  #About-Me {
+    padding: 200px 25px 120px 25px;
+    height: 800px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-  #About-Me{
+  #About-Me {
     padding: 250px 25px 120px 25px;
-    height: 650px;
+    height: 1000px;
   }
-  }
+}

@@ -1,7 +1,10 @@
 #Footer {
+  background: url(wave-haikei-footer.svg);
+  color: #e9eff4;
+  height: 800px;
+  background-size: cover;
   background-color: $primary-colors;
   color: $secondary-colors;
-  height: auto;
   padding: 110px 30px 50px 30px;
 }
 

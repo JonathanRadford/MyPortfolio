@@ -12,19 +12,19 @@
   height: 50px;
   padding: 10px 15px;
   margin: 10px;
-  border: 0.5px solid #3B474B;
+  border: 0.5px solid #3b474b;
   border-radius: 4px;
   cursor: pointer;
 }
 
 .btn-submit {
-  background-color: #3B474B;
-  color: #E9EFF4;
+  background-color: #3b474b;
+  color: #e9eff4;
 }
 
 .btn-reset {
-  background-color: #E9EFF4;
-  color: #3B474B;
+  background-color: #e9eff4;
+  color: #3b474b;
 }
 
 @media screen and (min-width: 1024px) {
@@ -77,6 +77,7 @@
   align-items: center;
   border-bottom: 1px solid #3b474b;
   transition: 0.4s;
+  z-index: 2;
 }
 .smallNav > .Navbar__Links {
   display: block;
@@ -196,17 +197,21 @@ h1 {
 h2 {
   font-size: 20px;
   font-weight: 800;
+  color: white;
+  text-shadow: 0 0 3px black;
 }
 
 p {
   font-size: 12px;
   font-weight: 700;
   padding-bottom: 10px;
+  color: white;
+  text-shadow: 0 0 3px black;
 }
 
 a {
   text-decoration: none;
-  color: #3B474B;
+  color: #3b474b;
 }
 
 @media screen and (min-width: 550px) {
@@ -340,7 +345,7 @@ p {
 }
 
 .fab:hover {
-  color: #3B474B;
+  color: #3b474b;
 }
 
 @media screen and (min-width: 1024px) {
@@ -364,33 +369,35 @@ p {
   }
 }
 #About-Me {
-  background-color: #3B474B;
-  color: #E9EFF4;
-  height: 288px;
-  padding: 80px 25px 50px 25px;
+  background: url(wave-haikei.svg);
+  z-index: -1;
+  color: #e9eff4;
+  height: 550px;
+  background-size: cover;
+  padding: 40px 40px 0;
 }
 
 @media screen and (min-width: 768px) {
   #About-Me {
-    height: 350px;
+    height: 500px;
     padding: 120px 25px 50px 25px;
   }
 }
 @media screen and (min-width: 1024px) {
   #About-Me {
     padding: 200px 25px 120px 25px;
-    height: 550px;
+    height: 800px;
   }
 }
 @media screen and (min-width: 1440px) {
   #About-Me {
     padding: 250px 25px 120px 25px;
-    height: 650px;
+    height: 1000px;
   }
 }
 .Landing-page {
   text-align: center;
-  color: #3B474B;
+  color: #3b474b;
 }
 
 #Background-Image {
@@ -438,9 +445,12 @@ p {
   }
 }
 #Footer {
-  background-color: #DAEAF0;
-  color: #3B474B;
-  height: auto;
+  background: url(wave-haikei-footer.svg);
+  color: #e9eff4;
+  height: 800px;
+  background-size: cover;
+  background-color: #daeaf0;
+  color: #3b474b;
   padding: 110px 30px 50px 30px;
 }
 
@@ -460,8 +470,11 @@ p {
   }
 }
 #Projects {
-  background-color: #3B474B;
-  color: #E9EFF4;
+  background: url(wave-haikei-up.svg);
+  color: #e9eff4;
+  height: 700px;
+  background-size: cover;
+  color: #e9eff4;
   height: auto;
   padding: 10px 20px 80px 20px;
 }
@@ -486,7 +499,7 @@ p {
   object-position: center;
 }
 .project > .content {
-  color: #3B474B;
+  color: #3b474b;
   inset: 0;
   font-size: 1rem;
   padding: 1rem;
@@ -540,10 +553,14 @@ p {
 }
 
 #skills {
-  background-color: #DAEAF0;
-  color: #3B474B;
+  background-color: #daeaf0;
   height: 285px;
-  padding: 80px 15px 50px 15px;
+  padding: 0 15px 50px 15px;
+}
+
+.skillsParagraph {
+  color: black;
+  text-shadow: 0 0 3px white;
 }
 
 #skillsInfo {
