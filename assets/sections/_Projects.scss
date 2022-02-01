@@ -1,7 +1,7 @@
 #Projects {
   background-color: $secondary-colors;
   color: $tertiary-colors;
-  height: 620px;
+  height: auto;
   padding: 10px 20px 80px 20px;
 }
 
@@ -26,7 +26,7 @@
   > .content {
     color: $secondary-colors;
     inset: 0;
-    font-size: 0.6rem;
+    font-size: 1rem;
     padding: 1rem;
     background: rgba(255, 255, 255, 0.4);
     display: flex;
@@ -35,7 +35,7 @@
     text-shadow: 0 0 3px black;
 
     > a {
-      font-size: 0.6rem;
+      font-size: 1rem;
     }
   }
   > h1 {
