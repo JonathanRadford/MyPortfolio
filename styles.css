@@ -385,7 +385,7 @@ p {
   background-color: white;
   border-radius: 40px;
   /* padding: 5px; */
-  margin: 40px;
+  margin: 10px;
 }
 
 .footer__linkedin {
@@ -394,7 +394,7 @@ p {
   background-color: white;
   border-radius: 40px;
   /* padding: 5px; */
-  margin: 40px;
+  margin: 10px;
 }
 
 .footer__twitter {
@@ -403,7 +403,7 @@ p {
   background-color: white;
   border-radius: 40px;
   /* padding: 5px; */
-  margin: 40px;
+  margin: 10px;
 }
 
 .fab:hover {
