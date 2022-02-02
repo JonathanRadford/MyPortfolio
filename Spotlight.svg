@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: rgb(241, 242, 243); display: block; z-index: 1; position: relative; shape-rendering: auto;" width="1600" height="749" preserveAspectRatio="xMidYMid" viewBox="0 0 1600 749">
+<g transform="translate(800,374.5) scale(1,1) translate(-800,-374.5)"><defs>
+
+<radialGradient id="ldbk-scxyhelulus" r="1" cx="0.46" cy="0.5" fx="0.54" fy="0.5" fr="0">
+  <animate attributeName="fy" repeatCount="indefinite" dur="4.761904761904762s" keyTimes="0;0.5;1" values="0.32;0.6799999999999999;0.32" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" calcMode="spline"></animate>
+  <animate attributeName="cy" repeatCount="indefinite" dur="7.142857142857143s" keyTimes="0;0.5;1" values="0.6799999999999999;0.32;0.6799999999999999" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" calcMode="spline"></animate>
+  <stop stop-color="#f5f3f4" offset="0%"></stop>
+  <stop stop-color="#0066ff" offset="33%"></stop>
+  <stop stop-color="#000000" offset="66%"></stop>
+  <stop stop-color="#f5f3f4" offset="100%"></stop>
+</radialGradient>
+
+</defs>
+<g transform="translate(800 374.5)">
+<circle cx="0" cy="0" r="883.3177514348956" fill="url(#ldbk-scxyhelulus)">
+<animateTransform attributeName="transform" type="rotate" dur="14.285714285714286s" keyTimes="0;1" values="0;360" repeatCount="indefinite"></animateTransform>
+</circle>
+</g></g>
+</svg>

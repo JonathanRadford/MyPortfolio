@@ -4,39 +4,42 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 60px);
-
+  color: $tertiary-colors;
   gap: 6px;
   justify-items: center;
   align-items: center;
-  border-left: 6px solid #002233;
-  border-right: 6px solid #002233;
-  background-color: $tertiary-colors;
+  border-left: 15px solid #002233;
+  border-right: 15px solid #002233;
+  // background-color: $tertiary-colors;
   padding: 0 35px 0;
   border-radius: 15px;
+  // background: url(Spotlight.svg);
+  // z-index: -1;
+  // background-size: cover;
 }
 .fab {
   font-size: 2em;
 }
-.fa-react {
-  color: #61dbfb;
-}
+// .fa-react {
+//   color: #61dbfb;
+// }
 
-.fa-css3-alt {
-  color: #264de4;
-}
+// .fa-css3-alt {
+//   color: #264de4;
+// }
 
-.fa-js {
-  background-color: black;
-  color: #f0db4f;
-}
+// .fa-js {
+//   background-color: black;
+//   color: #f0db4f;
+// }
 
-.fa-java {
-  color: #5382a1;
-}
+// .fa-java {
+//   color: #5382a1;
+// }
 
-.fa-html5 {
-  color: #f06529;
-}
+// .fa-html5 {
+//   color: #f06529;
+// }
 
 .Footer__Icons {
   display: flex;
