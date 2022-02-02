@@ -1,11 +1,12 @@
 #Footer {
-  background: url(wave-haikei-footer.svg);
+  background: url(blob-haikei.svg);
   color: #e9eff4;
   height: 365px;
   background-size: cover;
   background-color: $primary-colors;
   color: $secondary-colors;
   padding: 0 30px 50px 30px;
+  background-position: center;
   > h2,
   p {
     color: $tertiary-colors;
@@ -15,8 +16,8 @@
 
 @media screen and (min-width: 1024px) {
   #Footer {
-    padding-top: 100px;
-    height: 765px;
+    padding-top: 250px;
+    height: 900px;
   }
 }
 

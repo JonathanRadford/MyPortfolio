@@ -129,6 +129,18 @@
 
 @media screen and (min-width: 1024px) {
   .navbar {
-    height: 100px;
+    height: 170px;
+
+    > a > h2 {
+      padding: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .navbar {
+    > h2 {
+      font-size: 45px;
+    }
   }
 }
