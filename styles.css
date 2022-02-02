@@ -19,11 +19,11 @@
 
 .btn-submit {
   background-color: #3b474b;
-  color: #f4faff;
+  color: #f5f3f4;
 }
 
 .btn-reset {
-  background-color: #f4faff;
+  background-color: #f5f3f4;
   color: #3b474b;
 }
 
@@ -49,7 +49,7 @@
   }
 }
 .navbar {
-  background-color: #daeaf0;
+  background-color: #0066ff;
   height: 70px;
   width: 100%;
   position: fixed;
@@ -67,7 +67,7 @@
 }
 
 .smallNav {
-  background-color: #daeaf0;
+  background-color: #0066ff;
   height: 200px;
   width: 100%;
   position: fixed;
@@ -107,7 +107,7 @@
 .bar3 {
   width: 35px;
   height: 5px;
-  background-color: #333;
+  background-color: #002233;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -136,7 +136,6 @@
 
 @media screen and (min-width: 426px) {
   .smallNav {
-    background-color: #daeaf0;
     height: 150px;
     width: 100%;
     position: fixed;
@@ -149,12 +148,7 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .container {
-    display: none;
-  }
-
   .navbar {
-    background-color: #daeaf0;
     height: 70px;
     width: 100%;
     position: fixed;
@@ -165,21 +159,82 @@
     border-bottom: 1px solid #3b474b;
     transition: 0.4s;
   }
-  .navbar > .Navbar__Links {
-    display: block;
+
+  .bar1,
+.bar2,
+.bar3 {
+    width: 49px;
+    height: 7px;
+    background-color: #002233;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -10px);
+    transform: rotate(45deg) translate(-8px, -10px);
+  }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 8px);
+    transform: rotate(-45deg) translate(-9px, 8px);
   }
 }
 @media screen and (min-width: 1024px) {
   .navbar {
-    height: 170px;
+    height: 150px;
   }
   .navbar > a > h2 {
     padding: 0;
   }
+
+  .smallNav {
+    height: 200px;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .container {
+    left: 92%;
+    top: 50px;
+  }
+
+  .bar1,
+.bar2,
+.bar3 {
+    width: 63px;
+    height: 9px;
+    background-color: #002233;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -12px);
+    transform: rotate(45deg) translate(-8px, -12px);
+  }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 10px);
+    transform: rotate(-45deg) translate(-9px, 10px);
+  }
 }
 @media screen and (min-width: 1440px) {
-  .navbar > h2 {
-    font-size: 45px;
+  .navbar > a > h2 {
+    font-size: 35px;
+  }
+
+  .smallNav > a > h2 {
+    font-size: 35px;
+  }
+}
+@media screen and (min-width: 2550px) {
+  .navbar > a > h2 {
+    font-size: 55px;
+  }
+
+  .smallNav > a > h2 {
+    font-size: 55px;
   }
 }
 * {
@@ -205,14 +260,14 @@ h1 {
 h2 {
   font-size: 24px;
   letter-spacing: 3px;
-  color: black;
+  color: #f5f3f4;
 }
 
 p {
   font-size: 18px;
   font-weight: 700;
   padding-bottom: 10px;
-  color: white;
+  color: #f5f3f4;
   text-shadow: 0 0 3px black;
 }
 
@@ -306,9 +361,11 @@ p {
   gap: 6px;
   justify-items: center;
   align-items: center;
-  border-left: 3px solid black;
-  border-right: 3px solid black;
+  border-left: 6px solid #002233;
+  border-right: 6px solid #002233;
+  background-color: #f5f3f4;
   padding: 0 35px 0;
+  border-radius: 15px;
 }
 
 .fab {
@@ -378,7 +435,7 @@ p {
 @media screen and (min-width: 1024px) {
   #skills__icons {
     gap: 100px;
-    padding: 0 150px 0;
+    padding: 50px 150px 100px;
   }
 
   .fab {
@@ -399,14 +456,14 @@ p {
 #About-Me {
   background: url(wave-haikei.svg);
   z-index: -1;
-  color: #e9eff4;
+  color: #0066ff;
   height: 720px;
   background-size: cover;
   padding: 40px 40px 0;
 }
 #About-Me > h2,
 #About-Me p {
-  color: #f4faff;
+  color: #f5f3f4;
   text-shadow: black 0px 0px 3px;
 }
 
@@ -430,13 +487,14 @@ p {
 }
 .Landing-page {
   text-align: center;
-  color: #3b474b;
+  color: #f5f3f4;
 }
 
 #Background-Image {
-  background-image: url(Wales.jpg);
+  background-image: url(fluid.svg);
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-position: center;
   height: 710px;
   top: 20px;
   z-index: -5;
@@ -489,7 +547,7 @@ p {
 }
 #Footer > h2,
 #Footer p {
-  color: #f4faff;
+  color: #f5f3f4;
   text-shadow: black 0px 0px 3px;
 }
 
@@ -513,13 +571,13 @@ p {
   background: url(wave-haikei-up.svg);
   color: #e9eff4;
   background-size: cover;
-  color: #f4faff;
+  color: #f5f3f4;
   height: auto;
   padding: 620px 20px 80px 20px;
   z-index: -1;
 }
 #Projects > h2 {
-  color: #f4faff;
+  color: #f5f3f4;
 }
 
 #Project__Information {
@@ -606,7 +664,7 @@ p {
   }
 }
 #skills {
-  background-color: #daeaf0;
+  background-color: #0066ff;
   height: 0px;
 }
 
