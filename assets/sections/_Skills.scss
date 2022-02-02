@@ -1,7 +1,7 @@
 #skills {
   background-color: $primary-colors;
   height: 285px;
-  padding: 0 15px 50px 15px;
+  padding: 0 15px 150px 15px;
 }
 
 .skillsParagraph {
@@ -10,26 +10,39 @@
 }
 
 #skillsInfo {
-  padding-top: 50px;
-  display: grid;
+  padding-top: 150px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .Curly-Left {
-  grid-column: 3/6;
-  grid-row: 1/12;
+  // grid-column: 3/6;
+  // grid-row: 1/12;
   height: auto;
-  width: 40px;
+  width: 65px;
 }
 .Curly-Right {
-  grid-column: 9/12;
-  grid-row: 1/12;
+  // grid-column: 9/12;
+  // grid-row: 1/12;
   height: auto;
-  width: 40px;
+  width: 65px;
 }
 
-.skillsParagraph {
-  grid-column: 8;
-  grid-row: 6/9;
+// .skillsParagraph {
+//   // grid-column: 8;
+//   // grid-row: 6/9;
+@media screen and (min-width: 425px) {
+  #skills {
+    height: 350px;
+  }
+
+  .Curly-Left {
+    width: 80px;
+  }
+  .Curly-Right {
+    width: 80px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -38,39 +51,35 @@
   }
 
   .Curly-Left {
-    padding-left: 40px;
+    width: 100px;
   }
   .Curly-Right {
-    padding-right: 40px;
+    width: 100px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   #skills {
     height: 520px;
-    padding-top: 170px;
     padding-bottom: 120px;
   }
   .Curly-Left {
-    padding-left: 90px;
-    width: 60px;
+    width: 200px;
   }
   .Curly-Right {
-    padding-right: 90px;
-    width: 60px;
+    width: 200px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   #skills {
     height: 580px;
-    padding-top: 200px;
-    padding-bottom: 190px;
+    padding-bottom: 550px;
   }
   .Curly-Left {
-    width: 80px;
+    width: 250px;
   }
   .Curly-Right {
-    width: 80px;
+    width: 250px;
   }
 }

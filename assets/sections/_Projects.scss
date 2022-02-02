@@ -1,11 +1,14 @@
 #Projects {
   background: url(wave-haikei-up.svg);
   color: #e9eff4;
-  height: 700px;
   background-size: cover;
   color: $tertiary-colors;
   height: auto;
-  padding: 10px 20px 80px 20px;
+  padding: 700px 20px 80px 20px;
+  z-index: -1;
+  > h2 {
+    color: $tertiary-colors;
+  }
 }
 
 #Project__Information {
@@ -92,40 +95,16 @@
   padding: 15px 25px 15px 25px;
 }
 
-// @media screen and (min-width: 768px) {
-//   #Projects {
-//     height: 950px;
-//     padding-top: 80px;
-//   }
-//   .Project__Images {
-//     border-radius: 10px;
-//     height: 125px;
-//   }
-//   .Project__Text {
-//     padding: 20px 25px 20px 25px;
-//   }
-//   .projects {
-//     display: flex;
-//     width: 450px;
-//   }
-//   #game-gif {
-//     width: 275px;
-//     height: auto;
-//   }
-
-//   #calculator-gif {
-//     width: 275px;
-//     height: auto;
-//   }
-//   #Morse-code-gif {
-//     width: 275px;
-//     height: auto;
-//   }
-//   #Beers-API-gif {
-//     width: 275px;
-//     height: auto;
-//   }
-// }
+@media screen and (min-width: 768px) {
+  #Project__Information {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
 
 // @media screen and (min-width: 1024px) {
 //   .Project__Images {

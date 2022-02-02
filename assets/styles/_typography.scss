@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 24px;
   line-height: 1rem;
 }
@@ -12,19 +12,18 @@ p {
   text-align: center;
 }
 h1 {
-  font-size: 30px;
+  font-size: 34px;
   font-weight: 800;
   line-height: 1.5rem;
 }
 
 h2 {
-  font-size: 20px;
-  font-weight: 800;
-  color: white;
-  text-shadow: 0 0 3px black;
+  font-size: 24px;
+  letter-spacing: 3px;
+  color: black;
 }
 p {
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 700;
   padding-bottom: 10px;
   color: white;
@@ -71,9 +70,11 @@ a {
   }
   h1 {
     font-size: 45px;
+    line-height: 2.3rem;
   }
   h2 {
     font-size: 25px;
+    line-height: 2.3rem;
   }
   p {
     font-size: 23px;
@@ -90,14 +91,14 @@ a {
     padding: 10px 80px 10px 80px;
   }
   h1 {
-    font-size: 50px;
+    font-size: 60px;
   }
   h2 {
-    font-size: 32px;
+    font-size: 45px;
   }
 
   p {
-    font-size: 29px;
+    font-size: 35px;
     padding: 20px 180px 30px 180px;
     line-height: 1.7rem;
   }
