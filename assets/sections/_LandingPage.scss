@@ -1,19 +1,20 @@
-.Landing-page{
+.Landing-page {
   text-align: center;
-  color: $secondary-colors;
+  color: $tertiary-colors;
 }
 
 #Background-Image {
-  background-image: url(Wales.jpg);
+  background-image: url(fluid.svg);
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-position: center;
   height: 710px;
   top: 20px;
   z-index: -5;
   padding-bottom: 150px;
 }
 
-#Landing__Profile{
+#Landing__Profile {
   margin-top: 200px;
   height: 134px;
   width: auto;
@@ -23,15 +24,15 @@
   #Background-Image {
     height: 760px;
   }
-  #Landing__Profile{
+  #Landing__Profile {
     margin-top: 200px;
     height: 220px;
     width: auto;
+  }
 }
-}
- 
- @media screen and (min-width: 1024px) {
-  #Landing__Profile{
+
+@media screen and (min-width: 1024px) {
+  #Landing__Profile {
     margin-top: 200px;
     height: 250px;
     width: auto;
@@ -40,7 +41,7 @@
     padding-bottom: 200px;
   }
 }
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1440px) {
   #Background-Image {
     padding-bottom: 260px;
     height: 800px;

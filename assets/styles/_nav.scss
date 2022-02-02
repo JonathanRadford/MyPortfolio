@@ -1,7 +1,7 @@
 @import "_variables";
 
 .navbar {
-  background-color: #daeaf0;
+  background-color: #0066ff;
   height: 70px;
   width: 100%;
   position: fixed;
@@ -19,7 +19,7 @@
 }
 
 .smallNav {
-  background-color: #daeaf0;
+  background-color: #0066ff;
   height: 200px;
   width: 100%;
   position: fixed;
@@ -58,7 +58,7 @@
 .bar3 {
   width: 35px;
   height: 5px;
-  background-color: #333;
+  background-color: #002233;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -92,7 +92,6 @@
 
 @media screen and (min-width: 426px) {
   .smallNav {
-    background-color: #daeaf0;
     height: 150px;
     width: 100%;
     position: fixed;
@@ -106,12 +105,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    display: none;
-  }
-
   .navbar {
-    background-color: #daeaf0;
     height: 70px;
     width: 100%;
     position: fixed;
@@ -121,26 +115,97 @@
     align-items: center;
     border-bottom: 1px solid #3b474b;
     transition: 0.4s;
-    > .Navbar__Links {
-      display: block;
-    }
+  }
+  // .smallNav {
+  //   flex-direction: row;
+  // }
+
+  .container {
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 49px;
+    height: 7px;
+    background-color: #002233;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -10px);
+    transform: rotate(45deg) translate(-8px, -10px);
+  }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 8px);
+    transform: rotate(-45deg) translate(-9px, 8px);
   }
 }
 
 @media screen and (min-width: 1024px) {
   .navbar {
-    height: 170px;
+    height: 150px;
 
     > a > h2 {
       padding: 0;
     }
   }
+  .smallNav {
+    height: 200px;
+    justify-content: center;
+
+    flex-direction: row;
+  }
+
+  .container {
+    left: 92%;
+    top: 50px;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 63px;
+    height: 9px;
+    background-color: #002233;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -12px);
+    transform: rotate(45deg) translate(-8px, -12px);
+  }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 10px);
+    transform: rotate(-45deg) translate(-9px, 10px);
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .navbar {
-    > h2 {
-      font-size: 45px;
+    > a > h2 {
+      font-size: 35px;
+    }
+  }
+  .smallNav {
+    > a > h2 {
+      font-size: 35px;
+    }
+  }
+}
+@media screen and (min-width: 2550px) {
+  .navbar {
+    > a > h2 {
+      font-size: 55px;
+    }
+  }
+  .smallNav {
+    > a > h2 {
+      font-size: 55px;
     }
   }
 }
