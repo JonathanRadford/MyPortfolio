@@ -1,19 +1,16 @@
 @import "_variables";
 
 #skills__icons {
-  // display: flex;
-  // justify-content: space-around;
-  // flex-wrap: wrap;
-  // margin-top: 40px;
-  // gap: 29px;
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 60px);
-  margin-top: 40px;
-  gap: 10px;
-  align-items: center;
+
+  gap: 6px;
   justify-items: center;
+  align-items: center;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  padding: 0 35px 0;
 }
 .fab {
   font-size: 2em;
@@ -72,12 +69,14 @@
   #skills__icons {
     grid-template-rows: repeat(3, 100px);
     gap: 35px;
+    padding: 0 70px 0;
   }
 }
 
 @media screen and (min-width: 1024px) {
   #skills__icons {
     gap: 100px;
+    padding: 0 150px 0;
   }
   .fab {
     margin-top: 20px;
