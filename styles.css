@@ -12,19 +12,19 @@
   height: 50px;
   padding: 10px 15px;
   margin: 10px;
-  border: 0.5px solid #3b474b;
+  border: 0.5px solid #002233;
   border-radius: 4px;
   cursor: pointer;
 }
 
 .btn-submit {
-  background-color: #3b474b;
+  background-color: #002233;
   color: #f5f3f4;
 }
 
 .btn-reset {
   background-color: #f5f3f4;
-  color: #3b474b;
+  color: #002233;
 }
 
 @media screen and (min-width: 1024px) {
@@ -273,7 +273,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #3b474b;
+  color: #002233;
 }
 
 @media screen and (min-width: 550px) {
@@ -380,27 +380,25 @@ p {
 }
 
 .footer__gitHub {
-  color: white;
   padding: 0 20px 0 20px;
+  color: #f5f3f4;
   margin: 10px;
 }
 
 .footer__linkedin {
-  color: #0072b1;
   padding: 0 20px 0 20px;
-  background-color: white;
-  border-radius: 40px;
+  color: #f5f3f4;
   margin: 10px;
 }
 
 .footer__twitter {
-  color: #08a0e9;
   padding: 0 20px 0 20px;
+  color: #f5f3f4;
   margin: 10px;
 }
 
 .fab:hover {
-  color: #3b474b;
+  color: #002233;
 }
 
 @media screen and (min-width: 425px) {
@@ -525,7 +523,7 @@ p {
   height: 365px;
   background-size: cover;
   background-color: #daeaf0;
-  color: #3b474b;
+  color: #002233;
   padding: 0 30px 50px 30px;
   background-position: center;
 }
@@ -594,7 +592,7 @@ p {
   object-position: center;
 }
 .project > .content {
-  color: #3b474b;
+  color: #002233;
   inset: 0;
   font-size: 1rem;
   padding: 1rem;

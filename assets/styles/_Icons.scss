@@ -49,21 +49,18 @@
 }
 
 .footer__gitHub {
-  color: white;
   padding: 0 20px 0 20px;
+  color: $tertiary-colors;
   margin: 10px;
 }
 .footer__linkedin {
-  color: #0072b1;
   padding: 0 20px 0 20px;
-  background-color: white;
-  border-radius: 40px;
+  color: $tertiary-colors;
   margin: 10px;
 }
 .footer__twitter {
-  color: #08a0e9;
   padding: 0 20px 0 20px;
-
+  color: $tertiary-colors;
   margin: 10px;
 }
 
