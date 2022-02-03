@@ -107,7 +107,7 @@
 .bar3 {
   width: 35px;
   height: 5px;
-  background-color: #002233;
+  background-color: #f5f3f4;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -165,7 +165,7 @@
 .bar3 {
     width: 49px;
     height: 7px;
-    background-color: #002233;
+    background-color: #f5f3f4;
     margin: 6px 0;
     transition: 0.4s;
   }
@@ -204,7 +204,7 @@
 .bar3 {
     width: 63px;
     height: 9px;
-    background-color: #002233;
+    background-color: #f5f3f4;
     margin: 6px 0;
     transition: 0.4s;
   }
@@ -564,10 +564,20 @@ p {
   color: #f5f3f4;
 }
 
+#Projects-Header {
+  padding-top: 40px;
+}
+
+.project-technology-used {
+  padding: 20px;
+  gap: 20px;
+}
+
 #Project__Information {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 40px;
 }
 
 .project {
@@ -658,7 +668,7 @@ p {
 }
 
 #skillsInfo {
-  padding-top: 50px;
+  padding-top: 100px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
